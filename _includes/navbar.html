@@ -1,0 +1,25 @@
+<nav>
+  <i id="hamburger">
+  </i>
+
+  <a href="{{"/" | relative_url }}">
+    <img id="logo" src="{{ "/assets/logos/developerro.64x64.png" | relative_url }}" alt="developerro">
+  </a>
+
+  <a class="text" href="{{"/" | relative_url }}">
+    developerro
+  </a>
+
+  <ul id="nav-options">
+    <li>
+      <a href="/posts">blog</a>
+    </li>
+    {% for node in site.pages %}
+      {% if node.menu != null %}
+          <li>
+            <a href="{{ node.url }}">{{ node.menu }}</a>
+          </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</nav>

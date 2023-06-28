@@ -1,0 +1,37 @@
+.youtube {
+    width: 100%;
+    height: 54vw;
+}
+
+@media (min-width: 992px) {
+    .youtube {
+        height: 556px;
+    }
+}
+
+@media (min-width: 1242px) {
+    .youtube {
+        height: 694px;
+    }
+}
+
+.message {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    color: var(--message-text-color);
+    background-color: var(--message-background-color);
+}
+
+.highlight {
+    padding: 5px;
+    pre {
+        margin: 0;
+        overflow-x: auto;
+        word-wrap: normal;
+    }
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 200px;
+}

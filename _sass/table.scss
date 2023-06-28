@@ -1,0 +1,51 @@
+table {
+  margin: 0;
+  padding: 0;
+  table-layout: fixed;
+
+  tr {
+    background-color: var(--table-cell-background-color);
+    border: 1px solid var(--table-cell-border-color);
+    padding: .35em;
+  }
+
+  th {
+    background-color: var(--table-header-background-color);
+    color: var(--table-header-text-color);
+    padding: .625em;
+    letter-spacing: .1em;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  td {
+    padding: .625em;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+    display: block;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    margin: 0 auto;
+    overflow-x: auto;
+    white-space: nowrap;
+
+    thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+
+      padding: 0;
+      width: 1px;
+    }
+
+    tr {
+      margin-bottom: .625em;
+    }
+  }
+}

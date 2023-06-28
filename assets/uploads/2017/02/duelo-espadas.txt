@@ -1,0 +1,66 @@
+Hola	Hola, soy Guybrush Threepwood y ¡quiero ser un pirata!	Generic
+Adios	Mira, detrás de ti, un mono de tres cabezas	Generic
+¡Llevarás mi espada como si fueras un pincho moruno!	Primero deberías dejar de usarla como un plumero.	The Secret of Monkey Island
+Mi lengua es más hábil que cualquier espada.	Primero deberías dejar de usarla como un plumero.	The Secret of Monkey Island
+¡Luchas como un ganadero!	Qué apropiado, tú peleas como una vaca.	The Secret of Monkey Island
+¡Ordeñaré hasta la última gota de sangre de tu cuerpo!	Qué apropiado, tú peleas como una vaca.	The Secret of Monkey Island
+¡No hay palabras para describir lo asqueroso que eres!	Sí que las hay, sólo que nunca las has aprendido.	The Secret of Monkey Island
+Ya no hay técnicas que te puedan salvar.	Sí que las hay, sólo que nunca las has aprendido.	The Secret of Monkey Island
+¡He hablado con simios más educados que tu!	Me alegra que asistieras a tu reunión familiar diaria.	The Secret of Monkey Island
+Ahora entiendo lo que significan basura y estupidez.	Me alegra que asistieras a tu reunión familiar diaria.	The Secret of Monkey Island
+¡Obtuve esta cicatriz en mi cara en una lucha a muerte!	Espero que ya hayas aprendido a no tocarte la nariz.	The Secret of Monkey Island
+Acabé en mi última pelea con las manos llenas de sangre.	Espero que ya hayas aprendido a no tocarte la nariz.	The Secret of Monkey Island
+¡No pienso aguantar tu insolencia aquí sentado!	Ya te están fastidiando otra vez las almorranas, ¿eh?	The Secret of Monkey Island
+¡Eres como un dolor en la parte baja de la espalda!	Ya te están fastidiando otra vez las almorranas, ¿eh?	The Secret of Monkey Island
+¡Mi pañuelo limpiará tu sangre!	Ah, ¿ya has obtenido ese trabajo de barrendero?	The Secret of Monkey Island
+Mi nombre es reconocido en cada sucio rincón de esta isla.	Ah, ¿ya has obtenido ese trabajo de barrendero?	The Secret of Monkey Island
+¡Ha llegado tu HORA, palurdo de ocho patas!	Y yo tengo un SALUDO para ti, ¿te enteras?	The Secret of Monkey Island
+Hoy te tengo preparada una larga y dura lección.	Y yo tengo un SALUDO para ti, ¿te enteras?	The Secret of Monkey Island
+¿Has dejado ya de usar pañales?	¿Por qué? ¿Acaso querías pedir uno prestado?	The Secret of Monkey Island
+Espero que tengas un barco para una rápida huida.	¿Por qué? ¿Acaso querías pedir uno prestado?	The Secret of Monkey Island
+¡Una vez tuve un perro más listo que tú!	Te habrá enseñado todo lo que sabes.	The Secret of Monkey Island
+Sólo he conocido a uno tan cobarde como tú.	Te habrá enseñado todo lo que sabes.	The Secret of Monkey Island
+¡Nadie me ha sacado sangre jamás, y nadie lo hará!	¿TAN rápido corres?	The Secret of Monkey Island
+Nunca me verán luchar tan mal como tú lo haces.	¿TAN rápido corres?	The Secret of Monkey Island
+¡Me das ganas de vomitar!	Me haces pensar que alguien ya lo ha hecho.	The Secret of Monkey Island
+Si tu hermano es como tú, mejor casarse con un cerdo.	Me haces pensar que alguien ya lo ha hecho.	The Secret of Monkey Island
+¡Tienes los modales de un mendigo!	Quería asegurarme de que estuvieras a gusto conmigo.	The Secret of Monkey Island
+Cada palabra que sale de tu boca es una estupidez.	Quería asegurarme de que estuvieras a gusto conmigo.	The Secret of Monkey Island
+¡He oído que eres un soplón despreciable!	Qué pena me da que nadie haya oído hablar de ti.	The Secret of Monkey Island
+Mi espada es famosa en todo el Caribe - ¡Mi nombre es temido en cada sucio rincón de esta isla!	Qué pena me da que nadie haya oído hablar de ti.	The Secret of Monkey Island
+¡La gente cae a mis pies al verme llegar!	¿Incluso antes de que huelan tu aliento?	The Secret of Monkey Island
+Mis enemigos más sabios corren al verme llegar.	¿Incluso antes de que huelan tu aliento?	The Secret of Monkey Island
+¡Demasiado bobo para mi nivel de inteligencia!	Estaría acabado si la usases alguna vez.	The Secret of Monkey Island
+¡Tengo el coraje y la técnica de un maestro!	Estaría acabado si la usases alguna vez	The Secret of Monkey Island
+Los enemigos contra los que me enfrenté fueron aniquilados.	Con tu aliento, seguro que todos fueron asfixiados.	The Curse of Monkey Island
+Mis ataques han dejado islas enteras sin poblados.	Con tu aliento, seguro que todos fueron asfixiados.	The Curse of Monkey Island
+Eres tan repulsivo como una mona marrana.	¿Es que TANTO me parezco a tu hermana?	The Curse of Monkey Island
+Tienes el atractivo de una iguana.	¿Es que TANTO me parezco a tu hermana?	The Curse of Monkey Island
+¡Que el cielo conserve mi vista! ¡Pareces muerto como el pescado!	La única forma en la que te conservarás será disecado.	The Curse of Monkey Island
+Nada podrá salvar tu pobre pellejo resecado.	La única forma en la que te conservarás será disecado.	The Curse of Monkey Island
+¡Te perseguiré día y noche sin ningún respeto!	Entonces sé un buen perro. ¡Siéntate! ¡Quieto!	The Curse of Monkey Island
+¡Persiguiendo a mi presa, la dejo en un aprieto!	Entonces sé un buen perro. ¡Siéntate! ¡Quieto!	The Curse of Monkey Island
+¡Voy a ensartarte como a una puerca guarrería!	Cuando acabe CONTIGO, serás un bistec con disentería.	The Curse of Monkey Island
+Tus labios me recuerdan a los del pescado del día.	Cuando acabe CONTIGO, serás un bistec con disentería.	The Curse of Monkey Island
+Mis grandes hazañas por todo el Caribe son celebradas.	Qué pena que todas estén inventadas.	The Curse of Monkey Island
+Mis habilidades con la espada son muy veneradas.	Qué pena que todas estén inventadas.	The Curse of Monkey Island
+Jamás había visto a nadie tan torpe con la espada	Así habría sido, pero siempre estabas de escapada.	The Curse of Monkey Island
+Nunca he perdido una pelea a espada.	Así habría sido, pero siempre estabas de escapada.	The Curse of Monkey Island
+¡No descansaré hasta que hayas sido exterminado!	Entonces deberías cambiar a descafeinado.	The Curse of Monkey Island
+¡Tu olor hasta a un limpiador de retretes dejaría conmocionado!	Entonces deberías cambiar a descafeinado.	The Curse of Monkey Island
+¡Matarte sería un homicidio justificado!	Entonces matarte debe ser un fungicidio justificado.	The Curse of Monkey Island
+Cuando termine, tu cuerpo estará podrido y disecado.	Entonces matarte debe ser un fungicidio justificado.	The Curse of Monkey Island
+¡Si luchas cara a cara conmigo necesitarás un consejero!	Es esa tu cara, pensé que era tu trasero.	The Curse of Monkey Island
+Nunca antes me había encarado a alguien tan pordiosero.	Es esa tu cara, pensé que era tu trasero.	The Curse of Monkey Island
+Te dejaré devastado, mutilado y perforado.	Tu solo olor me deja enfadado, agitado y enojado.	The Curse of Monkey Island
+No sé cuál de mis características te tiene más intimidado.	Tu solo olor me deja enfadado, agitado y enojado.	The Curse of Monkey Island
+¡Eres el monstruo más feo jamás creado!	Si no cuentas todas las demás con las que te has citado.	The Curse of Monkey Island
+Tu cara haría vomitar hasta al cerdo menos aseado.	Si no cuentas todas las demás con las que te has citado.	The Curse of Monkey Island
+¿Te gustaría ser enterrado o incinerado?	Contigo alrededor, preferiría ser fumigado.	The Curse of Monkey Island
+Te dejaré elegir. ¡Puedes ser destripado o decapitado!	Contigo alrededor, preferiría ser fumigado.	The Curse of Monkey Island
+Cuando tu padre te vio por primera vez debió sentirse mortificado.	Al menos el mío puede ser identificado.	The Curse of Monkey Island
+Eres de un linaje sucio y alocado.	Al menos el mío puede ser identificado.	The Curse of Monkey Island
+¡Mis graciosos comentarios no igualarás con acierto!	Podré, si utilizas un spray contra tu mal aliento.	The Curse of Monkey Island
+Nada podrá impedirme que te arrastre como el viento.	Podré, si utilizas un spray contra tu mal aliento.	The Curse of Monkey Island
+¡En guardia! ¡Mamarracho!	¡Tus palabras no son de un macho!	The Curse of Monkey Island
+¡Tu madre es un marimacho!	¡Tus palabras no son de un macho!	The Curse of Monkey Island

@@ -1,0 +1,95 @@
+---
+layout: default
+title: Home
+background: '/assets/uploads/bg/mydesktop.jpg'
+---
+<header class="home">
+  <h1>developerro</h1>
+  <small>cuando en mi máquina tampoco funciona...</small>
+</header>
+
+<main id="portfolio">
+  <ul>
+    {% for post in site.posts limit:5 %}
+    <li>
+      {% if post.categories contains "video" %}
+        <i class="fa fa-video category"></i>
+      {% elsif  post.categories contains "podcast" %}
+        <i class="fa fa-headphones category"></i>
+      {% else %}
+        <i class="fa fa-book category"></i>
+      {% endif %}
+
+      <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+        {% if post.background %}
+        <img src="{{ post.background | prepend: site.baseurl | replace: '//', '/' }}" alt="Ilustración que queda bonita en el layout del portfolio" />
+        {% endif %}
+
+        <article>
+          <h2>{{ post.title }}</h2>
+
+          <small>
+            {{ post.date | date_to_string }} &middot; {% include read_time.html content=post.content %}
+          </small>
+
+          <p>
+            {% if post.subtitle %}
+              {{ post.subtitle }}
+            {% else %}
+              {% if forloop.index == 1 %}
+                {{ post.content | strip_html | truncatewords: 60 }}
+              {% else %}
+                {{ post.content | split:'<!--break-->' | first | strip_html | truncatewords: 20  }}
+              {% endif %}
+            {% endif %}
+          </p>
+        </article>
+      </a>
+    </li>
+    {% if forloop.index == 3 %}
+    <li class="about-me">
+      <a href="/about">
+        <img src="/assets/uploads/fernandoescolar400x400.jpg" class="avatar" alt="Foto de Fernando Escolar" />
+        <h2>sobre mí</h2>
+        <p>
+          <i class="fa fa-heart" title="Me gusta"></i> Estrella Galicia<br>
+          <i class="fa fa-thumbs-down" title="No me gusta"></i> Verdura<br>
+          <i class="fa fa-tint" title="Mi color preferido"></i> Naranja<br>
+          <i class="fa fa-gamepad" title="Mi videojuego preferido"></i> Super Mario Bros. 3<br>
+          <i class="fa fa-briefcase" title="Trabajo en"></i> SCRM Lidl International Hub<br>
+        </p>
+      </a>
+    </li>
+    {% endif %}
+    {% endfor %}
+    <li class="tags">
+      {% assign tags = site.tags | sort %}
+      {% for tag in tags %}
+        {% assign count = tag | last | size %}
+        {% if count > 0 %}
+        <a href="/tags#{{ tag | first | slugify }}"
+           style="font-size: {{ tag | last | size | times: 4 | plus: 100  }}%">
+                {{ tag[0] | replace:'-', ' ' }}
+        </a>
+        {% endif %}
+      {% endfor %}
+    </li>
+    <li class="subscribe">
+      <h2>Suscríbete</h2>
+      <p>
+        Recibe los artículos nuevos en tu cuenta de correo <b>¡Suscríbete!</b>:
+        <form action="https://developerro.us1.list-manage.com/subscribe/post?u=bfb91aa1721da1832b629b445&amp;id=cddd679336" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <fieldset>
+            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="you@domain.com">
+            <button type="submit" name="subscribe" id="mc-embedded-subscribe">Subscribirse</button>
+          </fieldset>
+          <input type="hidden" name="b_bfb91aa1721da1832b629b445_cddd679336" tabindex="-1" value="" />
+          <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+          </div>
+        </form>
+      </p>
+    </li>
+  </ul>
+</main>

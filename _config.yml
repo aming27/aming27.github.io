@@ -1,0 +1,44 @@
+# Dependencies
+markdown:         kramdown
+highlighter:      rouge
+
+# Gems
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+
+# Permalinks
+permalink:           pretty
+relative_permalinks: false
+
+# Setup
+name:             developerro
+title:            developerro
+tagline:          'El blog de Fernando Escolar'
+description:      'cuando en mi máquina tampoco funciona...'
+url:              https://www.developerro.com
+baseurl:          /
+icon:             '/assets/apple-touch-icon-144-precomposed.png'
+locale:           es_es
+
+author:
+  name:           'Fernando Escolar'
+  url:            https://twitter.com/fernandoescolar
+  email:          fer.escolar@gmail.com
+  twitter:        fernandoescolar
+  github:         fernandoescolar
+  linkedin:       fernandoescolar
+  instagram:      fernando.escolar
+  twitch:         fernandoescolar
+  youtube:        fernandoescolar
+  buymeacoffee:   fernandoescolar
+
+paginate:         5
+paginate_path:    'posts/page:num'
+
+version:          2.1.0
+
+github:
+  repo:           https://github.com/fernandoescolar
+
+future:           false

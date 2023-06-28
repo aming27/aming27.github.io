@@ -1,0 +1,41 @@
+---
+layout: default
+title: Blog
+background: '/assets/uploads/bg/blog.jpg'
+---
+
+<header>
+  <h1>Blog</h1>
+  <small>de Fernando Escolar</small>
+</header>
+
+{% for post in paginator.posts %}
+<article class="list-item">
+  <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+    <h2>{{ post.title }}</h2>
+  </a>
+  <small>
+    {{ post.date | date_to_string }} &middot; {% include read_time.html content=post.content %}
+  </small>
+  <p>
+    {% if post.subtitle %}
+      {{ post.subtitle }}
+    {% else %}
+      {{ post.content | split:'<!--break-->' | first }}
+    {% endif %}
+  </p>
+</article>
+{% endfor %}
+
+<section id="pagination">
+  {% if paginator.next_page %}
+    <a class="left" href="/posts/page{{paginator.next_page}}">&lt; Antiguos</a>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="right" href="/posts/">Nuevos &gt;</a>
+    {% else %}
+      <a class="right" href="/posts/page{{paginator.previous_page}}">Nuevos &gt;</a>
+    {% endif %}
+  {% endif %}
+</section>

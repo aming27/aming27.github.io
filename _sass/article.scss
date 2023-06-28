@@ -1,0 +1,28 @@
+article {
+    h2 {
+        margin: 0.83em 0;
+    }
+
+    &.list-item {
+        border-bottom: 1px solid var(--border-color);
+        padding-bottom: 1em;
+
+        h2 {
+            margin-bottom: 0;
+        }
+    }
+
+    &.post {
+        img, .youtube {
+            box-shadow: 0 4px 8px 0 var(--shadow-color);
+        }
+    }
+
+    &#error {
+        margin-top: 100px;;
+    }
+
+    li {
+        padding: 0.1em 0;
+    }
+}

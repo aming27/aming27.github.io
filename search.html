@@ -1,0 +1,20 @@
+---
+layout: page
+title: Buscar
+menu: buscar
+background: '/assets/uploads/bg/search.jpg'
+---
+<p>Desde aquí podrás buscar alguna palabra. Con una suerte de malabarismo e ingenio basado en un archivo json y javascript, intentaremos encontrar los artículos que la contengan.</p>
+<input type="text" id="search-input" placeholder="buscar...">
+<ul id="results-container"></ul>
+
+
+<!-- Script pointing to jekyll-search.js -->
+<script src="/assets/jekyll-search.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('results-container'),
+  json: '/search.json',
+})
+</script>

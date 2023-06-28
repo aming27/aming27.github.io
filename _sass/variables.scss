@@ -1,0 +1,94 @@
+body {
+  --accent-color: #ac4142;
+  --accent-color-light: #bf616a;
+  --background-color: #f1f5f9;
+  --background-color-light: #fff;
+  --background-color-light-alt: #f9f9f9;
+  --border-color: rgba(0, 0, 0, 0.1);
+  --header-title-color: #fff;
+  --header-color-1: rgba(255, 255, 255, 0.95);
+  --header-color-2: rgba(172, 65, 66, 0.55);
+  --shadow-color: rgba(0, 0, 0, 0.2);
+  --text-color: #212529;
+  --text-color-light: #717171;
+  --watermark-color: rgba(255,255,255,0.4);
+}
+
+body.dark-theme {
+  --accent-color: #ac4142;
+  --accent-color-light: #ac4142;
+  --background-color: #212529;
+  --background-color-light: #000;
+  --background-color-light-alt: #393939;
+  --border-color: rgba(0, 0, 0, 0.1);
+  --header-title-color: #fff;
+  --header-color-1: rgba(0, 0, 0, 0.95);
+  --header-color-2: rgba(128, 128, 128, 0.85);
+  --shadow-color: rgba(150, 150, 150, 0.0);
+  --text-color: #f1f5f9;
+  --text-color-light: #717171;
+  --watermark-color: rgba(255,255,255,0.4);
+}
+
+body {
+  --body-text-color: var(--text-color);
+  --body-background-color: var(--background-color);
+  --body-font-family: 'Ubuntu', 'Open Sans', Arial, Helvetica, sans-serif;
+
+  --code-inline-text-color: var(--accent-color-light);
+  --code-inline-background-color: var(--background-color-light-alt);
+
+  --blockquote-text-color: var(--text-color-light);
+  --blockquote-background-color: var(--background-color-light-alt);
+  --blockquote-border-color: var(--text-color-light);
+
+  --input-text-color: var(--text-color);
+  --input-background-color: var(--background-color-light-alt);
+
+  --button-text-color: var(--background-color-light);
+  --button-background-color: var(--accent-color-light);
+
+  --cookie-consent-text-color: var(--background-color-light-alt);
+  --cookie-consent-background-color: var(--text-color);
+  --cookie-consent-button-text-color: var(--background-color-light);
+  --cookie-consent-button-background-color: var(--accent-color);
+
+  --message-text-color: var(--text-color-light);
+  --message-background-color: var(--background-color-light-alt);
+
+  --footer-background-color: var(--background-color-light);
+  --footer-button-text-color: var(--background-color-light);
+  --footer-button-background-color: var(--text-color);
+  --footer-button-hover-text-color: var(--background-color-light);
+  --footer-button-hover-background-color: var(--accent-color);
+
+  --header-title-font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  --header-title-text-color: var(--header-title-color);
+  --header-background-color: linear-gradient(to bottom, var(--header-color-1) 0%, var(--header-color-2) 100%);
+  --header-background-image: url(/assets/uploads/bg/desktop.jpg) center / cover;
+
+  --box-text-color: var(--text-color);
+  --box-background-color: var(--background-color-light);
+  --box-icon-color: var(--watermark-color);
+  --box-aboutme-text-color: var(--text-color-light);
+
+  --nav-background-color: var(--background-color-light);
+  --nav-a-color: var(--text-color);
+
+  --a-color: var(--accent-color);
+
+  --small-color: var(--text-color-light);
+
+  --logo-color: var(--accent-color);
+
+  --share-button-text-color: var(--header-title-color);
+  --share-button-background-color: var(--accent-color-light);
+
+  --pagination-button-text-color: var(--header-title-color);
+  --pagination-button-background-color: var(--accent-color-light);
+
+  --table-cell-background-color: var(--background-color-light-alt);
+  --table-cell-border-color: var(--background-color);
+  --table-header-text-color: var(--background-color);
+  --table-header-background-color: var(--text-color);
+}

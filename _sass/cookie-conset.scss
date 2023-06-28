@@ -1,0 +1,25 @@
+#cookie-notice {
+    font-size: 1em;
+    padding: 2rem 2rem;
+    display: none;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    background: var(--cookie-consent-background-color);
+    color: var(--cookie-consent-text-color);
+    opacity: 0.95;
+
+    a {
+        display: block;
+        width: 5em;
+        margin: 1em auto;
+        padding: .35rem .7rem;
+        font-weight: 700;
+        color: var(--cookie-consent-button-text-color);
+        cursor: pointer;
+        text-decoration: none;
+        border: 0;
+        background-color: var(--cookie-consent-button-background-color);
+    }
+}

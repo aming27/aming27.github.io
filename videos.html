@@ -1,0 +1,32 @@
+---
+layout: default
+title: Vídeos
+menu: vídeos
+background: '/assets/uploads/bg/videos.jpg'
+---
+
+<header>
+  <h1>Vídeos</h1>
+</header>
+
+<main id="videos">
+  <ul>
+    {% for post in site.categories.video %}
+    <li>
+      <i class="fa fa-video category"></i>
+      <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+        {% if post.background %}
+        <img src="{{ post.background | prepend: site.baseurl | replace: '//', '/' }}" alt="Ilustración que queda bonita en el layout del portfolio" />
+        {% else %}
+        <img src="{{ page.background | prepend: site.baseurl | replace: '//', '/' }}" alt="Ilustración estandar para vídeo" />
+        {% endif %}
+
+        <article>
+          <h2>{{ post.title }}</h2>
+          <small>{{ post.date | date_to_string }}</small>
+        </article>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</main>
