@@ -3,7 +3,7 @@ published: true
 ID: 202309062
 title: 'Terraform from 0 to Hero!(1) - Que es Terraform - '
 author: 'Alfonso Ming'
-post_date: 2023-06-29 19:30:3p
+post_date: 2023-06-29 19:30:00
 layout: post
 tags: terraform
 background: '/assets/uploads/bg/terraform.png'
