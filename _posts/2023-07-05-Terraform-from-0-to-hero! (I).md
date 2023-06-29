@@ -11,12 +11,11 @@ background: '/assets/uploads/bg/terraform.png'
 
 Con vistas puestas a la próxima Net Core Conf de Madrid donde me gustaría hablar de Terraform, vamos a iniciar una serie de artículos que van desde lo más elemental de Terraform a como lo utilizamos en un entorno como el de SCRM donde hay mucha gente creando infraestructura de forma diaria. <!--break-->.
 
-
-- [Introducción](#introducción)
   - [¿Qué es Terraform"?](#que-es-terraform)
-  - [¿Que es un provider?](#qué-es-el-patrón-de-inversión-de-control)
-  - [¿Que es un resource?](#cómo-funciona-el-inyector-de-dependencias-de-net)
+  - [¿Que es un provider?](#qué-es-un-provider)
+  - [¿Que es un resource?](#que-es-un-resource)
   - [Instalando Terraform](#instalando-terraform)
+  - [Configurar Terraform](#configurar-terraform)
 
 
 ## Que es Terraform
@@ -70,4 +69,53 @@ Pues la verdad tampoco hay mucho que explicar, la instalación de Terraform es m
 ```bash
 $ brew install terraform
 ```
+Pero, espera, un momento ... ¿que pasa si estamos trabajando con diferentes proyectos que usan versiones diferentes de terraform? Pues para esto hay una solución muy chula que se llama **tdenv**. TFenv nos permite tener varias versiones del binario de Terraform instaladas en nuestro sistema y cambiar de una versión a otra de forma sencilla.
+Para instalarla en Mac:
+
+```bash
+$ brew install terraform
+```
+Puedes visitar el github de la aplicación para ver otras formas de instalar la tool [tfenv](https://github.com/tfutils/tfenv)
+
+## Configurar Terraform ( para trabajar con Azure)
+
+Para empezar a usar Terraform con Microsoft Azure lo primero que tendremos que hacer es tener unas credenciales de una cuenta de *service principal* para nuestra suscripción de Azure. Para obtenerlas podemos usar la herramienta [Azure CLI](https://docs.microsoft.com/es-es/cli/azure/install-azure-cli?view=azure-cli-latest):
+
+```bash
+$ az login
+```
+
+Después de introducir nuestra credenciales, se listarán las suscripciones a las que pertenecemos. De ahí hay que leer el parámetro `id` de la que nos interese. Después seleccionamos esa suscripción para trabajar con ella:
+
+```bash
+$ az account set --subscription="SUBSCRIPTION_ID"
+````
+
+Y finalmente creamos la cuenta de *service principal*:
+
+```bash
+$ az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/SUBSCRIPTION_ID"
+```
+
+Esta petición nos devolverá algo como esto:
+
+```json
+{
+  "appId": "...",
+  "displayName": "...",
+  "name": "...",
+  "password": "...",
+  "tenant": "..."
+}
+````
+
+Donde:
+
+- `appId` equivale a `client_id`
+- `password` es el `client_secret`
+- `tenant` es en realidad el `tenant_id`
+
+Pues con esto
+
+
 
