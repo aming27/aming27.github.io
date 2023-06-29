@@ -1,13 +1,13 @@
-<!-- ---
+---
 published: true
 ID: 202309062
-title: 'Terraform from 0 to Hero!'
+title: 'Terraform from 0 to Hero!(1) - Que es Terraform - '
 author: 'Alfonso Ming'
-post_date: 2023-07-07 01:04:36
+post_date: 2023-06-29 19:30:3p
 layout: post
 tags: terraform
 background: '/assets/uploads/bg/terraform.png'
---- -->
+---
 
 Con vistas puestas a la próxima Net Core Conf de Madrid donde me gustaría hablar de Terraform, vamos a iniciar una serie de artículos que van desde lo más elemental de Terraform a como lo utilizamos en un entorno como el de SCRM donde hay mucha gente creando infraestructura de forma diaria. <!--break-->.
 
@@ -115,7 +115,11 @@ Donde:
 - `password` es el `client_secret`
 - `tenant` es en realidad el `tenant_id`
 
-Pues con esto
+
+
+Ahora que ya tenemos terraform instalado en nuestro sistema y configurado nuestro service principal para poder crear recursos en nuestra subscripción de Azure es el momento para empezar a trastear ;-) Pero eso lo dejamos para el siguiente post, donde crearemos nuestros primeros recursos y veremos los comandos básicos de Terraform!
+
+
 
 
 
