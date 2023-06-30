@@ -9,7 +9,7 @@ tags: terraform
 background: '/assets/uploads/bg/terraform.png'
 ---
 
-Con vistas puestas a la próxima Net Core Conf de Madrid donde me gustaría hablar de Terraform, vamos a iniciar una serie de artículos que van desde lo más elemental de Terraform a como lo utilizamos en un entorno como el de SCRM donde hay mucha gente creando infraestructura de forma diaria. <!--break-->.
+Con vistas puestas a la próxima Net Core Conf de Madrid donde me gustaría hablar de Terraform, vamos a iniciar una serie de artículos que van desde lo más elemental de Terraform a como lo utilizamos en un entorno como el de SCRM donde hay mucha gente creando infraestructura de forma diaria. <!--break-->
 
   - [¿Qué es Terraform"?](#que-es-terraform)
   - [¿Que es un provider?](#qué-es-un-provider)
