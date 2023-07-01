@@ -64,7 +64,7 @@ Ahora que ya sabemos que es Terraform, ¿ que tal si lo instalamos y empezamos a
 
 ## Instalando Terraform
 
-Pues la verdad tampoco hay mucho que explicar, la instalación de Terraform es muy sencilla. Si vas con Windows puedes ir a la [web oficial](https://www.terraform.io/downloads.html) descargarte el .exe e instalar. En mi caso que utilizo mac es tan sencillo como hacer:
+Pues la verdad tampoco hay mucho que explicar, la instalación de Terraform es muy sencilla. Si vas con Windows puedes ir a la [web oficial](https://www.terraform.io/downloads.html) descargarte el .exe e instalar el ejecutable. En mi caso que utilizo Mac es tan sencillo como hacer:
 
 ```bash
 $ brew install terraform
@@ -75,11 +75,11 @@ Para instalarla en Mac:
 ```bash
 $ brew install terraform
 ```
-Puedes visitar el github de la aplicación para ver otras formas de instalar la tool [tfenv](https://github.com/tfutils/tfenv)
+Puedes visitar el [github](https://github.com/tfutils/tfenv) de la aplicación para ver otras formas de instalar la tool.
 
 ## Configurar Terraform ( para trabajar con Azure)
 
-Para empezar a usar Terraform con Microsoft Azure lo primero que tendremos que hacer es tener unas credenciales de una cuenta de *service principal* para nuestra suscripción de Azure. Para obtenerlas podemos usar la herramienta [Azure CLI](https://docs.microsoft.com/es-es/cli/azure/install-azure-cli?view=azure-cli-latest):
+Para empezar a usar Terraform con Microsoft Azure lo primero que tendremos que hacer es tener unas credenciales de una cuenta de *service principal* para nuestra suscripción de Azure. Vamos a ver como obtener un Service Principal usando la [Azure CLI](https://docs.microsoft.com/es-es/cli/azure/install-azure-cli?view=azure-cli-latest):
 
 ```bash
 $ az login

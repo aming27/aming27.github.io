@@ -2,7 +2,7 @@
 published: true
 ID: 
 title: 'Net Core Conf Málaga'
-author: fernandoescolar
+author: Alfonso Ming
 post_date: 2023-05-27 01:04:36
 layout: post
 tags: dotnet net netcoreconf
