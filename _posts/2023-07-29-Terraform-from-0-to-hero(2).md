@@ -9,7 +9,7 @@ tags: terraform
 background: '/assets/uploads/bg/terraform.png'
 ---
 
-Ya tenemos Terraform instalado y nuestro service principal para poder crear recursos en Azure, si no leíste el primer ([post](https://aming27.github.io/que-es-terraform)), este es un buen momento para hacerlo ;-). Vamos empezar a jugar un poquito.
+Ya tenemos Terraform instalado y nuestro service principal para poder crear recursos en Azure, si no leíste el primer ([post](https://aming27.github.io/2023/06/29/Terraform-from-0-to-hero(1)/)), este es un buen momento para hacerlo ;-). Vamos empezar a jugar un poquito.
 No te preocupes mucho si de momento no te queda algo claro, en los siguientes posts iremos refrescando los conceptos.
 
 <!--break-->
