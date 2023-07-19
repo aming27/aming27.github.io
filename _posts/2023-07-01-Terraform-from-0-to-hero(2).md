@@ -15,7 +15,7 @@ No te preocupes mucho si de momento no te queda algo claro, en los siguientes po
 <!--break-->
 
 
-  - [Creando nuestros primeros recursos](#Creando-nuestros-primeros-Recursos)
+  - [Creando nuestros primeros recursos](#creando-nuestros-primeros-recursos)
   - [Comandos básicos terrafom](#comandos-terraform)
 
 ## Creando nuestros primeros recursos
@@ -128,7 +128,7 @@ variable tenant_id {
 
 
 
-## Comandos terraform: init
+## Comandos terraform
 
 El primer comando a ejecutar para inicializar nuestro proyecto de Terraform es:
 
@@ -166,6 +166,7 @@ El plan de ejecución de Terraform consta de varias etapas que ocurren cuando ej
 
 - Salida del plan: Una vez que el plan está completo, Terraform muestra en la salida estándar un resumen de los cambios propuestos. Esto incluye información sobre los recursos afectados, las acciones que se tomarán y cualquier cambio asociado, como direcciones IP, grupos de seguridad, etc.
 
+Pues con esto ya sabemos lo básico para trabajar con Terraform. En los siguientes posts seguiremos profundizando en el uso de Terraform y como llegar a desplegar infrastructura en el mundo real.
 
 
 
