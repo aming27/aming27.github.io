@@ -16,6 +16,7 @@ No te preocupes mucho si de momento no te queda algo claro, en los siguientes po
 
 
   - [Creando nuestros primeros recursos](#Creando-nuestros-primeros-Recursos)
+  - [Comandos básicos terrafom](#comandos-terraform)
 
 ## Creando nuestros primeros recursos
 
@@ -127,6 +128,43 @@ variable tenant_id {
 
 
 
+## Comandos terraform: init
+
+El primer comando a ejecutar para inicializar nuestro proyecto de Terraform es:
+
+```bash
+terraform init
+```
+No hay que preocuparse, un terraform init nunca nos borrará nuestro estado ni ninguna configuración existente. Básicamente el comando escanea la configuración en busca de referencias a providers, en el caso de que los providers estén publicados en el registry, Terraform descargará e instalará automáticamente los plugins de providers necesarios.
+
+
+El siguiente comando a ejecutar será un plan:
+
+```bash
+terraform plan
+```
+
+Cuando ejecutas el comando "terraform plan", Terraform analiza los archivos de configuración y genera un plan detallado de los cambios que se aplicarán en tu infraestructura. En lugar de realizar los cambios de inmediato, Terraform examina el estado actual de la infraestructura y compara con la definición deseada en los archivos de configuración. Este comando no nos generará ningún cambio en nuestra infra, pero si nos ayudará para saber exactamente que cambios se van a realizar.
+
+Y por último, ahora sí, vamos a desplegar los cambios con el comando:
+
+```bash
+terraform apply
+```
+
+El plan de ejecución de Terraform consta de varias etapas que ocurren cuando ejecutas el comando "terraform plan". Estas etapas son las siguientes:
+
+- Configuración y carga de proveedores: Terraform lee y carga los proveedores necesarios según la configuración definida en los archivos de configuración. Los proveedores son los complementos que Terraform utiliza para interactuar con diferentes servicios y tecnologías, como proveedores de nube (AWS, Azure, Google Cloud, etc.) o servicios específicos (base de datos, DNS, etc.).
+
+- Análisis de archivos de configuración: Terraform analiza los archivos de configuración (generalmente escritos en el lenguaje de configuración de Terraform) y crea una representación interna del estado deseado de la infraestructura. Esto incluye recursos, variables, módulos, etc. Terraform también consulta el estado actual de la infraestructura almacenado en el archivo de estado.
+
+- Descubrimiento de dependencias: Terraform determina las dependencias entre los recursos definidos en los archivos de configuración. Esto es importante para establecer un orden correcto de creación y modificación de los recursos.
+
+- Generación del plan: Utilizando la información recopilada, Terraform genera un plan detallado de los cambios que se aplicarán a la infraestructura. El plan muestra las acciones que Terraform tomará, como crear, modificar o eliminar recursos, así como los recursos y configuraciones involucrados en cada acción.
+
+- Validación de variables: Terraform verifica que todas las variables requeridas estén definidas y tengan valores válidos. Si hay alguna variable faltante o inválida, Terraform mostrará un mensaje de error y no continuará con la ejecución.
+
+- Salida del plan: Una vez que el plan está completo, Terraform muestra en la salida estándar un resumen de los cambios propuestos. Esto incluye información sobre los recursos afectados, las acciones que se tomarán y cualquier cambio asociado, como direcciones IP, grupos de seguridad, etc.
 
 
 
