@@ -126,7 +126,7 @@ variable tenant_id {
 
 ```
 
-
+Es un ejemplo súper sencillo, básicamente copiado de la documentación de la web de Terraform pero que nos sirve para ver alguna cosa interesante. Fíjate que cuando definimos un reosurce le damos un nombre. Por ejemplo cuando creamos el resource group de azure (azurerm_resource_group) le hemos dado el nombre de "rg". Este identificador lo podremos usar en recursos posteriores para vincular nuestros resources. De tal manera que el storage y la virtual net que estamos creando después se crearán dentro del resource group creado previamente.
 
 ## Comandos terraform
 
