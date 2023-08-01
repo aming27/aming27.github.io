@@ -9,16 +9,17 @@ tags: terraform
 background: '/assets/uploads/bg/terraform.png'
 ---
 
-En el post anterior vimos como generar una infraestructura básica y aprendimos los comandos básicos de Terraform. Si no has leído el ([post](https://aming27.github.io/2023/06/29/Terraform-from-0-to-hero(2)/)), ahora es buen momento ;-)
+En el post anterior vimos como generar una infraestructura básica y aprendimos los comandos básicos de Terraform. Si no has leído el ([post anterior](https://aming27.github.io/2023/06/29/Terraform-from-0-to-hero(2)/)), ahora es buen momento ;-)
 
 Si recuerdas lo último que hicimos fue hacer un 'terraform apply'. Si miras ahora en tu directorio verás que te ha aparecido un nuevo ficherete: terraform.tfstate . Y te preguntarás, ¿ para que sirve este fichero ? Pues eso es lo que vamos a tratar de ver en este artículo ;-)
 
 <!--break-->
 
- - [Que es el Tfstate](#que-es-el-tfstate)
+ - [Que es el tfstate](#que-es-el-tfstate)
  - [Casos de usos](#casos-de-uso)
+  
 
- ## Que es el Tfstate
+## Que es el tfstate
 
  El archivo "terraform.tfstate" es un recurso esencial proporcionado por Terraform para rastrear, almacenar y mantener el estado actual de la infraestructura definida en el código. Se presenta en formato JSON y actúa como un repositorio central que almacena información detallada sobre los recursos creados en la nube, como máquinas virtuales, redes, almacenamiento, entre otros. Este archivo, en esencia, se convierte en un registro de la infraestructura en su estado actual, lo que permite una administración más eficiente y una planificación precisa de futuros cambios y actualizaciones.
 
@@ -37,9 +38,9 @@ terraform state [list, rm, mv]
 ```
 
 Con este comando podemos listar, mover y eliminar recursos de nuestro fichero de estado sin comprometer el ficherete en cuestión.
-![tfstatelist](/assets/uploads2023/08/tfstate.png)
+![tfstatelist](/assets/uploads/2023/08/tfstate.png)
 
- ## Casos de usos 
+## Casos de usos 
 
  ¿ Que pasaría si por ejemplo intento eliminar manualmente el storage ?
 
@@ -57,7 +58,7 @@ terraform state rm azurerm_storage_account.storage
 
 Si volvemos a ejecutar el tf plan el resultado sería el mismo que el de la imagen anterior. Con una diferencia, al hacer un terraform apply nos fallaría porque Terraform intentaría crear un recurso ya existente. Por como funciona Terraform, para eliminar un recurso completamente debemos de eliminarlo del fichero de estado pero también fisícamente del portal. Pero a ver, ¿ me estás diciendo que para borrar recursos en Terraform tengo que hacer dos pasos ? Lógicamente no, para borrar recursos tenemos un nuevo comando: 
 
-”terraform destroy”
+`terraform destroy`
 
 Ojo porque este comando ejecutado literalmente:
 
@@ -75,7 +76,7 @@ terraform destroy -target='resource.name'”.
 
 Otra opción es directamente eliminar el recurso del proyecto de Terraform, lo cuál Terraform lo interpretará como que ese recurso ha sido eliminado y procederá a eliminarse del fichero de estado y del cloud de Azure.
 
-Vale, pero entonces, ¿ para que vale toda la movida de los comandos de terraform state para manejar el fichero de estado de Terraform ? En mi experiencia a mi me ha resultado muy útil para mover recursos de un proyecto de Terraform a otro diferente en el que los ficheros de estado lógicamente son diferentes. En el próximo post prometo hablar de esto, y de un nuevo comando: terraform import 
+Vale, pero entonces, ¿ para que vale toda la movida de los comandos de terraform state para manejar el fichero de estado de Terraform ? En mi experiencia a mi me ha resultado muy útil para mover recursos de un proyecto de Terraform a otro diferente en el que los ficheros de estado lógicamente son diferentes. En el próximo post prometo hablar de esto, y de un nuevo comando: `terraform import`
 
 
 
