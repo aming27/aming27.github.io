@@ -17,6 +17,7 @@ Si recuerdas lo último que hicimos fue hacer un `terraform apply`. Si miras aho
 
  - [Que es el tfstate](#que-es-el-tfstate)
  - [Casos de usos](#casos-de-uso)
+ - [Workspaces](#workspaces)
   
 
 ## Que es el tfstate
@@ -71,12 +72,32 @@ Nos eliminaría toda la infraestructura contenida en el proyecto de Terraform.
 Si queremos borrar un recurso específico haríamos lo siguiente:
 
 ```bash
-terraform destroy -target='resource.name'”. 
+terraform destroy -target='resource.name' 
 ```
 
 Otra opción es directamente eliminar el recurso del proyecto de Terraform, lo cuál Terraform lo interpretará como que ese recurso ha sido eliminado y procederá a eliminarse del fichero de estado y del cloud de Azure.
 
 Vale, pero entonces, ¿ para que vale toda la movida de los comandos de terraform state para manejar el fichero de estado de Terraform ? En mi experiencia a mi me ha resultado muy útil para mover recursos de un proyecto de Terraform a otro diferente en el que los ficheros de estado lógicamente son diferentes. En el próximo post prometo hablar de esto, y de un nuevo comando: `terraform import`
+
+## Workspaces
+
+Ahora que ya sabemos como trabaja Terraform con los ficheros de estado, probablemente te está surgiendo una duda, si queremos crear la misma infraestructura para diferentes entornos, ¿como se gestiona esto con el fichero de estado?
+
+Terraform tiene una funcionalidad que se llama `workspaces` y que obviamente tiene su comando asociado, ¿adivinas cuál? exacto: `terraform workspace` .  Los workspaces permiten crear múltiples entornos independientes, lo que resulta especialmente útil cuando se trabaja con varios entornos, como desarrollo, pruebas y producción. 
+
+Para crear un nuevo workspace sería tan sencillo como hacer lo siguiente:
+
+```bash
+terraform workspace new nombre_del_workspace 
+```
+Para seleccionar el workspace en el que quieres trabajar:
+
+```bash
+terraform workspace select nombre_del_workspace 
+```
+
+Por cada workspace Terraform creará un fichero de estado de tal manera que podremos gestionar nuestra infraestructura con el mismo código para múltiples entornos.
+
 
 
 
