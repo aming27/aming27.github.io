@@ -11,7 +11,7 @@ background: '/assets/uploads/bg/terraform.png'
 
 En el post anterior vimos como generar una infraestructura básica y aprendimos los comandos básicos de Terraform. Si no has leído el ([post anterior](https://aming27.github.io/2023/06/29/Terraform-from-0-to-hero(2)/)), ahora es buen momento ;-)
 
-Si recuerdas lo último que hicimos fue hacer un 'terraform apply'. Si miras ahora en tu directorio verás que te ha aparecido un nuevo ficherete: terraform.tfstate . Y te preguntarás, ¿ para que sirve este fichero ? Pues eso es lo que vamos a tratar de ver en este artículo ;-)
+Si recuerdas lo último que hicimos fue hacer un `terraform import`. Si miras ahora en tu directorio verás que te ha aparecido un nuevo ficherete: terraform.tfstate . Y te preguntarás, ¿ para que sirve este fichero ? Pues eso es lo que vamos a tratar de ver en este artículo ;-)
 
 <!--break-->
 
