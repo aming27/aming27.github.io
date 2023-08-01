@@ -11,7 +11,7 @@ background: '/assets/uploads/bg/terraform.png'
 
 En el post anterior vimos como generar una infraestructura básica y aprendimos los comandos básicos de Terraform. Si no has leído el ([post anterior](https://aming27.github.io/2023/06/29/Terraform-from-0-to-hero(2)/)), ahora es buen momento ;-)
 
-Si recuerdas lo último que hicimos fue hacer un `terraform import`. Si miras ahora en tu directorio verás que te ha aparecido un nuevo ficherete: terraform.tfstate . Y te preguntarás, ¿ para que sirve este fichero ? Pues eso es lo que vamos a tratar de ver en este artículo ;-)
+Si recuerdas lo último que hicimos fue hacer un `terraform apply`. Si miras ahora en tu directorio verás que te ha aparecido un nuevo ficherete: `terraform.tfstate` . Y te preguntarás, ¿ para que sirve este fichero ? Pues eso es lo que vamos a tratar de ver en este artículo ;-)
 
 <!--break-->
 
@@ -21,9 +21,9 @@ Si recuerdas lo último que hicimos fue hacer un `terraform import`. Si miras ah
 
 ## Que es el tfstate
 
- El archivo "terraform.tfstate" es un recurso esencial proporcionado por Terraform para rastrear, almacenar y mantener el estado actual de la infraestructura definida en el código. Se presenta en formato JSON y actúa como un repositorio central que almacena información detallada sobre los recursos creados en la nube, como máquinas virtuales, redes, almacenamiento, entre otros. Este archivo, en esencia, se convierte en un registro de la infraestructura en su estado actual, lo que permite una administración más eficiente y una planificación precisa de futuros cambios y actualizaciones.
+ El archivo `terraform.tfstate` es un recurso esencial proporcionado por Terraform para rastrear, almacenar y mantener el estado actual de la infraestructura definida en el código. Se presenta en formato JSON y actúa como un repositorio central que almacena información detallada sobre los recursos creados en la nube, como máquinas virtuales, redes, almacenamiento, entre otros. Este archivo, en esencia, se convierte en un registro de la infraestructura en su estado actual, lo que permite una administración más eficiente y una planificación precisa de futuros cambios y actualizaciones.
 
-Funciones clave del archivo terraform.tfstate:
+Funciones clave del archivo `terraform.tfstate`:
 
 - Seguimiento de recursos: Cuando Terraform crea recursos en la nube a partir de la definición del código, registra sus atributos y configuraciones en el archivo "terraform.tfstate". Esta funcionalidad es vital para garantizar la sincronización entre el estado deseado en el código y el estado real de la infraestructura en la nube. Al mantener un registro detallado de los recursos creados, evitamos discrepancias y aseguramos una infraestructura confiable y coherente.
 
