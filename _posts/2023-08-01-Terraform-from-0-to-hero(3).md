@@ -15,7 +15,8 @@ Si recuerdas lo último que hicimos fue hacer un 'terraform apply'. Si miras aho
 
 <!--break-->
 
- - [Tfstate](#que-es-el-tfstate)
+ - [Que es el Tfstate](#que-es-el-tfstate)
+ - [Casos de usos](#casos-de-uso)
 
  ## Que es el Tfstate
 
@@ -36,7 +37,7 @@ terraform state [list, rm, mv]
 ```
 
 Con este comando podemos listar, mover y eliminar recursos de nuestro fichero de estado sin comprometer el ficherete en cuestión.
-![tfstatelist](/assets/uploads/08/tfstate.png)
+![tfstatelist](/assets/uploads2023/08/tfstate.png)
 
  ## Casos de usos 
 
@@ -46,7 +47,7 @@ Si eliminamos manualmente el storage e intentamos hacer un plan, Terraform nos d
 
 Así quedaría el tf plan:
 
-![tfplan](/assets/uploads/08/tfplan.png)
+![tfplan](/assets/uploads/2023/08/tfplan.png)
 
 Y si borramos el recurso del fichero de estado de Terraform pero no de Azure y ejecutamos un plan, ¿ que sucedería ? 
 
